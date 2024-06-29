@@ -2,11 +2,11 @@
 Welcome to the documentation for the Quiz Application built with Spring Boot. This document provides an overview of the application, its features, setup instructions, usage guidelines, and more.
 
 ## Table of Contents
-Introduction
-Features
-Technologies Used
-Setup and Installation
-Usage
+1. Introduction
+2. Features
+3. Technologies Used
+4. Setup and Installation
+5. Usage
 
 ### Introduction
 The Quiz Application is designed to offer an interactive learning experience through quizzes. It supports user registration, quiz creation, participation, and real-time result tracking. Administrators can manage quizzes and questions through an admin panel, while users can participate in quizzes and view their scores via a user dashboard.
