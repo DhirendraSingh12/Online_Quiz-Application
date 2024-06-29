@@ -28,16 +28,3 @@ Ensure you have Java 11 or newer and Maven installed on your machine. Follow the
 git clone https://github.com/yourusername/online_quiz-application.git
 cd online_quiz-application
 
-Create a MySQL database named quiz and update src/main/resources/application.properties with your database credentials.
-
-Run the application using Maven:
-
-mvn spring-boot:run
-
-The application will be available at http://localhost:8080.
-
-### Usage:
-Navigate to http://localhost:8080/register to create a new user account.
-Use the admin credentials (configured in your application properties) to access the admin panel at http://localhost:8080/admin/home.
-As an admin, you can create new quizzes, add questions, and manage existing quizzes.
-As a user, participate in quizzes from the dashboard and view your scores.
