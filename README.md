@@ -1,34 +1,43 @@
-Quiz Application
-This is a comprehensive quiz application built with Spring Boot, designed to provide an interactive learning experience through quizzes.
+# Quiz App
 
-Features
-User Registration and Authentication: Allows users to sign up and log into the application securely.
-Quiz Management: Admin panel for creating, updating, and deleting quizzes and questions.
-User Dashboard: Users can participate in quizzes and view their scores.
-Event Tracking: Tracks user actions such as login, logout, and quiz activities.
-Responsive Design: Ensures a seamless experience across different devices.
-Technologies Used
-Spring Boot: Backend framework for building the application.
-Thymeleaf: Template engine for rendering views.
-Spring Security: Provides authentication and authorization functionalities.
-MySQL: Database for storing users, quizzes, and results.
-Bootstrap: Frontend framework for responsive design.
-Installation
-To run this application locally, ensure you have Java 11 or newer and Maven installed. Follow these steps:
+A comprehensive quiz application built with Spring Boot, designed to offer an interactive learning experience through quizzes. This application supports user registration, quiz creation, and participation with real-time results.
 
-Clone the repository:
+## Features
 
-bash
-Copy code
-git clone https://github.com/yourusername/quiz-app.git
-cd quiz-app
-Build and run the application using Maven:
+- User registration and authentication, including a "Remember Me" functionality for convenience.
+- Admin panel for quiz management, including creating, updating, and deleting quizzes and questions.
+- User dashboard to participate in quizzes and view scores.
+- Event listeners for tracking user actions such as login, logout, and quiz activities.
+- Responsive design for a seamless experience across different devices.
 
-bash
-Copy code
+## Technologies
+
+- **Spring Boot**: For the backend framework.
+- **Thymeleaf**: Template engine for rendering views.
+- **Spring Security**: For authentication and authorization.
+- **MySQL**: As the database for storing users, quizzes, and results.
+- **Bootstrap**: For responsive frontend design.
+
+## Setup and Installation
+
+Ensure you have Java 11 or newer and Maven installed on your machine. Follow these steps to get the application running:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/online_quiz-application.git
+cd online_quiz-application
+
+Create a MySQL database named quiz and update src/main/resources/application.properties with your database credentials.
+
+Run the application using Maven:
+
 mvn spring-boot:run
-Open your web browser and go to http://localhost:8080 to access the application.
 
-Usage
-Admin Panel: Accessible via /admin URL for managing quizzes.
-User Dashboard: Users can participate in quizzes and view their scores on the homepage.
+The application will be available at http://localhost:8080.
+
+### Usage:
+Navigate to http://localhost:8080/register to create a new user account.
+Use the admin credentials (configured in your application properties) to access the admin panel at http://localhost:8080/admin/home.
+As an admin, you can create new quizzes, add questions, and manage existing quizzes.
+As a user, participate in quizzes from the dashboard and view your scores.
